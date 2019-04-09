@@ -84,6 +84,13 @@
           <height>74</height>
          </rect>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Power
 Off</string>
@@ -106,6 +113,13 @@ Off</string>
           <width>79</width>
           <height>74</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
         </property>
         <property name="text">
          <string>Power
@@ -146,6 +160,13 @@ On</string>
           <height>74</height>
          </rect>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="checkable">
          <bool>true</bool>
         </property>
@@ -164,6 +185,13 @@ On</string>
           <width>79</width>
           <height>74</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
         </property>
         <property name="text">
          <string>Home
@@ -188,6 +216,13 @@ X</string>
           <height>74</height>
          </rect>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Home
 Y</string>
@@ -210,6 +245,13 @@ Y</string>
           <width>79</width>
           <height>74</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
         </property>
         <property name="text">
          <string>Home
@@ -250,6 +292,13 @@ Z</string>
           <height>71</height>
          </rect>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Set Part
  Zero </string>
@@ -267,6 +316,13 @@ Z</string>
           <height>71</height>
          </rect>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Go To 
 Part Zero</string>
@@ -279,23 +335,30 @@ Part Zero</string>
       <widget class="QTabWidget" name="tabWidget">
        <property name="geometry">
         <rect>
-         <x>10</x>
-         <y>130</y>
+         <x>0</x>
+         <y>150</y>
          <width>871</width>
          <height>481</height>
         </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
        </property>
        <property name="tabPosition">
         <enum>QTabWidget::South</enum>
        </property>
        <property name="currentIndex">
-        <number>1</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="tab">
         <attribute name="title">
          <string>Plot</string>
         </attribute>
-        <widget class="GcodeBackplot" name="gcodebackplot">
+        <widget class="GcodeBackplot" name="gcodebackplot" native="true">
          <property name="geometry">
           <rect>
            <x>10</x>
@@ -304,6 +367,64 @@ Part Zero</string>
            <height>431</height>
           </rect>
          </property>
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+          </font>
+         </property>
+         <widget class="QPushButton" name="navParent">
+          <property name="geometry">
+           <rect>
+            <x>70</x>
+            <y>340</y>
+            <width>79</width>
+            <height>74</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Open
+Parent</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="navUp">
+          <property name="geometry">
+           <rect>
+            <x>190</x>
+            <y>340</y>
+            <width>79</width>
+            <height>74</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Up</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="navDown">
+          <property name="geometry">
+           <rect>
+            <x>310</x>
+            <y>340</y>
+            <width>79</width>
+            <height>74</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Down</string>
+          </property>
+         </widget>
+         <widget class="QPushButton" name="navSelect">
+          <property name="geometry">
+           <rect>
+            <x>430</x>
+            <y>340</y>
+            <width>79</width>
+            <height>74</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Select</string>
+          </property>
+         </widget>
         </widget>
         <widget class="QFrame" name="frame_7">
          <property name="geometry">
@@ -522,6 +643,22 @@ Part Zero</string>
         <attribute name="title">
          <string>File</string>
         </attribute>
+        <widget class="QFrame" name="frame_13">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>20</y>
+           <width>621</width>
+           <height>421</height>
+          </rect>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+        </widget>
        </widget>
       </widget>
       <widget class="QTabWidget" name="tabWidget_2">
@@ -544,7 +681,7 @@ Part Zero</string>
         <enum>QTabWidget::South</enum>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>2</number>
        </property>
        <widget class="QWidget" name="tab_3">
         <attribute name="title">
@@ -584,9 +721,6 @@ Part Zero</string>
           <property name="alignment">
            <set>Qt::AlignCenter</set>
           </property>
-          <property name="referenceType" stdset="0">
-           <enum>DROWidget::Relative</enum>
-          </property>
          </widget>
          <widget class="DROWidget" name="drowidget_2">
           <property name="geometry">
@@ -603,12 +737,6 @@ Part Zero</string>
             <weight>75</weight>
             <bold>true</bold>
            </font>
-          </property>
-          <property name="referenceType" stdset="0">
-           <enum>DROWidget::Relative</enum>
-          </property>
-          <property name="axis" stdset="0">
-           <enum>DROWidget::Y</enum>
           </property>
          </widget>
          <widget class="QLabel" name="label_7">
@@ -650,9 +778,6 @@ Part Zero</string>
            <font>
             <pointsize>12</pointsize>
            </font>
-          </property>
-          <property name="axis" stdset="0">
-           <enum>DROWidget::Y</enum>
           </property>
          </widget>
          <widget class="QLabel" name="label_3">
@@ -779,12 +904,6 @@ Part Zero</string>
             <weight>75</weight>
             <bold>true</bold>
            </font>
-          </property>
-          <property name="referenceType" stdset="0">
-           <enum>DROWidget::Relative</enum>
-          </property>
-          <property name="axis" stdset="0">
-           <enum>DROWidget::Y</enum>
           </property>
          </widget>
          <widget class="DROWidget" name="drowidget_10">
@@ -1039,9 +1158,6 @@ Up</string>
              <height>17</height>
             </rect>
            </property>
-           <property name="referenceType" stdset="0">
-            <enum>DROWidget::Relative</enum>
-           </property>
           </widget>
           <widget class="DROWidget" name="drowidget_8">
            <property name="geometry">
@@ -1052,12 +1168,6 @@ Up</string>
              <height>17</height>
             </rect>
            </property>
-           <property name="referenceType" stdset="0">
-            <enum>DROWidget::Relative</enum>
-           </property>
-           <property name="axis" stdset="0">
-            <enum>DROWidget::Y</enum>
-           </property>
           </widget>
           <widget class="DROWidget" name="drowidget_9">
            <property name="geometry">
@@ -1067,12 +1177,6 @@ Up</string>
              <width>47</width>
              <height>17</height>
             </rect>
-           </property>
-           <property name="referenceType" stdset="0">
-            <enum>DROWidget::Relative</enum>
-           </property>
-           <property name="axis" stdset="0">
-            <enum>DROWidget::Z</enum>
            </property>
           </widget>
          </widget>
@@ -1091,19 +1195,6 @@ Up</string>
           <property name="frameShadow">
            <enum>QFrame::Raised</enum>
           </property>
-          <widget class="QLabel" name="label_6">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>10</y>
-             <width>54</width>
-             <height>17</height>
-            </rect>
-           </property>
-           <property name="text">
-            <string>TextLabel</string>
-           </property>
-          </widget>
           <widget class="MDIEntry" name="mdientry">
            <property name="geometry">
             <rect>
@@ -1130,6 +1221,11 @@ Enter</string>
           </widget>
          </widget>
         </widget>
+       </widget>
+       <widget class="QWidget" name="tab_5">
+        <attribute name="title">
+         <string>Torch Setup</string>
+        </attribute>
        </widget>
       </widget>
       <widget class="QFrame" name="frame_8">
@@ -1187,6 +1283,13 @@ Enter</string>
           <height>80</height>
          </rect>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Cycle
 Start</string>
@@ -1204,6 +1307,13 @@ Start</string>
           <height>80</height>
          </rect>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Step</string>
         </property>
@@ -1219,6 +1329,13 @@ Start</string>
           <width>80</width>
           <height>80</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
         </property>
         <property name="text">
          <string>Pause</string>
@@ -1236,6 +1353,13 @@ Start</string>
           <height>84</height>
          </rect>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Resume</string>
         </property>
@@ -1251,6 +1375,13 @@ Start</string>
           <width>80</width>
           <height>80</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
         </property>
         <property name="text">
          <string>Stop</string>
@@ -1284,6 +1415,13 @@ Start</string>
           <height>70</height>
          </rect>
         </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
         <property name="text">
          <string>Torch
 Off</string>
@@ -1300,6 +1438,13 @@ Off</string>
           <width>79</width>
           <height>70</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
         </property>
         <property name="text">
          <string>Torch
@@ -1363,7 +1508,7 @@ On</string>
         </property>
        </widget>
       </widget>
-      <widget class="JogIncrementWidget" name="jogincrementwidget">
+      <widget class="JogIncrementWidget" name="jogincrementwidget" native="true">
        <property name="geometry">
         <rect>
          <x>890</x>
@@ -1431,6 +1576,7 @@ On</string>
    <class>GcodeEditor</class>
    <extends>QFrame</extends>
    <header>qtpyvcp.widgets.input_widgets.gcode_editor</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>DialogButton</class>
